@@ -3,6 +3,7 @@ MAINTAINER tsv@hpe.com
 
 RUN pip install beaver
 
-CMD ["beaver", "--version"]
+# Basic beaver command
+CMD ["beaver", "-c /etc/beaver/beaver.conf", "-t stdout"]
 
 
